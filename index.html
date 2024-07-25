@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afro Nation Music Festival</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+                    font-family: 'cambrian', sans-serif;
+            color: #333;
+            background: url('background 2.jpg') no-repeat center center fixed;
+            background-size: cover; /* Ensures the background image covers the entire page */
+          }
+          
+      color: #333;
+    }
+    .hero-section {
+      background: url('hero-bg.jpg') no-repeat center center/cover;
+      color: #87CEEB;
+      text-align: center;
+      padding: 100px 0;
+      position: relative;
+    }
+    .hero-section .currency-selector {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 5px 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+    .lineup img {
+      width: 100%;
+      height: auto;
+    }
+    .lineup .card {
+      margin-bottom: 20px;
+    }
+    .additional-info {
+      font-size: 14px;
+      padding: 20px;
+      margin: 20px 0;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+    }
+    .additional-info h3 {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    .event-info {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .lineup .card-body {
+      text-align: center;
+    }
+    .lineup .card-body h5 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .lineup .card-body p {
+      font-size: 14px;
+    }
+    .subscription-form {
+      background: #f4f4f4;
+      padding: 30px;
+      border-radius: 8px;
+      text-align: center;
+      margin: 20px 0;
+    }
+    .subscription-form h3 {
+      margin-bottom: 20px;
+    }
+    .subscription-form input[type="email"] {
+      width: 80%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .subscription-form button {
+      padding: 10px 20px;
+    }
+    .footer {
+      background: #333;
+      color: #fff;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer img {
+      height: 30px;
+      width: auto;
+    }
+    .footer .terms {
+      font-size: 14px;
+    }
+    .footer .terms a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .footer .terms a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="download (6).png" alt="Afro Nation Logo" width="30" height="30" class="d-inline-block align-top">
+        Afro Nation
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#lineup">Lineup</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tickets">Tickets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#info">Info</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="hero-section">
+      <h1>Afro Nation Music Festival</h1>
+      <p>Join us for an unforgettable experience!</p>
+      <button class="btn btn-primary" data-toggle="modal" data-target="#ticketModal">Buy Tickets</button>
+      <div class="currency-selector">
+        <label for="currency">Currency:</label>
+        <select id="currency" name="currency">
+          <option value="usd">USD</option>
+          <option value="eur">EUR</option>
+          <option value="gbp">GBP</option>
+          <option value="cad">CAD</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-lg-9" id="lineup">
+        <h2>Lineup</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="asake.jpg" alt="asake">
+              <div class="card-body">
+                <h5 class="card-title">Asake</h5>
+                <p class="card-text">A popular artist known for his unique style and energetic performances.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="001 davido.jpg" alt="001 davido">
+              <div class="card-body">
+                <h5 class="card-title">Davido</h5>
+                <p class="card-text">A Nigeria Afrobeats singer and songwriter.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="burna.webp" alt="Burna boy">
+              <div class="card-body">
+                <h5 class="card-title">Burna boy</h5>
+                <p class="card-text">Burna Boy, is a Nigerian singer, songwriter and record producer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img class="card-img-top" src="wizkid.jpg" alt="Wizkid">
+              <div class="card-body">
+                <h5 class="card-title">Wizkid</h5>
+                <p class="card-text">More love, less Ego.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="event-info">
+          <h2>Event Information</h2>
+          <p>Dates: March 12-14, 2025</p>
+          <p>Location: O2 Arena london, United kingdom.</p>
+          <p>Artists: Davido, Asake, Rema, Burna Boy, Wizkid and other performing artists.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="additional-info">
+          <h2>Additional Information</h2>
+          <div>
+            <h3>Parking</h3>
+            <p>Parking is available at the venue for $10 per day. There are also several nearby parking lots and garages within walking distance.</p>
+          </div>
+          <div>
+            <h3>Food & Beverages</h3>
+            <p>Enjoy a variety of food trucks and stalls offering a wide range of cuisines. Beverages, including alcoholic and non-alcoholic options, will be available throughout the festival grounds.</p>
+          </div>
+          <div>
+            <h3>Accommodation</h3>
+            <p>Several nearby hotels offer special rates for festival attendees. Book early to secure your spot!</p>
+          </div>
+          <div>
+            <h3>Accessibility</h3>
+            <p>The festival grounds are fully accessible with designated viewing areas and facilities. Please contact us in advance for any specific accessibility needs.</p>
+          </div>
+          <div>
+            <h3>Security & Safety</h3>
+            <p>Your safety is our priority. There will be on-site security and first aid stations. Please follow all festival guidelines and report any concerns to festival staff.</p>
+          </div>
+          <div>
+            <h3>Merchandise</h3>
+            <p>Get your festival gear at our merchandise stands. From t-shirts to posters, there's something for everyone to remember the event by.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4" id="contact">
+      <div class="col-lg-12">
+        <h2>Contact Us</h2>
+        <p>For more information or inquiries, please reach out to us at <a href="mailto:info@afronation.com">info@afronation.com</a>.</p>
+        <p>Follow us on social media for the latest updates:</p>
+        <ul>
+          <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+          <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+          <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Modal for ticket purchasing -->
+    <div class="modal fade" id="ticketModal" tabindex="-1" role="dialog" aria-labelledby="ticketModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ticketModalLabel">Buy Tickets</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h4>Ticket Options</h4>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card">
+                  <h5 class="card-title">Standard Ticket</h5>
+                  <p class="card-text">Access to all general areas and performances.</p>
+                  <p class="card-text">$150</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <h5 class="card-title">VIP Ticket</h5>
+                  <p class="card-text">Includes access to VIP areas, exclusive viewing spots, and complimentary drinks.</p>
+                  <p class="card-text">$300</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <h5 class="card-title">Platinum Ticket</h5>
+                  <p class="card-text">All VIP benefits plus meet and greet with artists and backstage access.</p>
+                  <p class="card-text">$500</p>
+                </div>
+              </div>
+            </div>
+            <h4>Purchase</h4>
+            <p>Tickets can be purchased online at <a href="https://app.tickettailor.com/dashboard" target="_blank">www.afronation.com/tickets</a> or at the venue box office.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subscription Form -->
+    <div class="subscription-form">
+      <h3>Sign Up for Priority Access</h3>
+      <form action="your-server-endpoint" method="post">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <img src="afronation.jpg" alt="Footer Logo">
+    <div class="terms">
+      <p><a href="terms.html" target="_blank">Terms and Conditions</a></p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
